@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "DevTools Malware Scanner",
+  "version": "1.0",
+  "icons": {
+    "16": "image128.png",
+    "48": "image128.png",
+    "128": "image128.png"
+  },
+  "devtools_page": "devtools.html",
+  "permissions": [
+  "tabs",
+  "storage",
+  "notifications",
+  "nativeMessaging" 
+],
+  "background": {"service_worker": "background.js"},
+  "action": {
+    "default_title": "Malware Scanner",
+    "default_icon": "image128.png"
+  }
+}
