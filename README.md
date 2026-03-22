@@ -1,5 +1,12 @@
 # 🚨 Project_M | 멀웨어위험감지 확장프로그램
 
+악성코드를 감지하는 크롬 확장프로그램입니다.
+
+##
+
+학습모델 테스트 영상<br>
+<br>
+[![Youtube](https://img.shields.io/badge/Youtube-Project__H-red?logo=youtube&logoColor=white)](https://youtu.be/Ly1jYo7CWos)
 
 ---
 
@@ -23,6 +30,10 @@ Chrome DevTools를 활용하여 브라우저 트래픽을 수집하고,
 ## 🛠️ 기술 스택
 
 - Python
+- HTML
+- JS
+- Numpy
+- Tensorflow
 - Scikit-learn
 - Chrome DevTools
 - JSON 기반 데이터 처리
@@ -34,6 +45,51 @@ Chrome DevTools를 활용하여 브라우저 트래픽을 수집하고,
 - Chrome DevTools 기반 트래픽 수집
 - 실시간 스캔 로직 구현
 - 임계값 초과 시 사용자 경고 알림 시스템
+
+---
+
+## 📁 프로젝트 구조
+
+Project_M/
+├── damage_detection/            # 차량 손상 여부 판단 시스템
+│   ├── car/
+│   ├── checkpoints/
+│   ├── pipeline/
+│   ├── result/
+│   └── uploads/
+├── driver_matching_system/      # 기사 매칭 / 경로 추천 시스템
+│   ├── delivery_orders_2026.csv
+│   ├── delivery_orders_2026_utf8.csv
+│   └── driver_matching_system.ipynb
+├── review_sentiment_system/     # 리뷰 감정 분석 시스템
+│   ├── drivers_2026.xlsx
+│   ├── review_label.csv
+│   └── review_sentiment_system.ipynb
+├── database/                    # 데이터베이스
+│   ├── mysql
+│   └── mysql-installer-web-community-8.0.44.0.msi
+│
+└── web/                         # 웹 구동
+
+---
+
+## 📊 데이터 구성
+
+- 데이터 형식: JSON
+- 전체 트래픽 수: 4046건
+- 학습 데이터: 506건 (조건 충족 데이터만 사용)
+- Feature 수: 14개
+
+---
+
+## 🧹 데이터 전처리
+
+- 분석 기준 충족 데이터 선별
+- 불필요 로그 제거
+- 학습/평가 데이터 분리
+- Feature 정규화 (Scaling)
+- 클래스 불균형 대응
+- 클래스 가중치 적용
 
 ---
 
@@ -55,26 +111,6 @@ Chrome DevTools를 활용하여 브라우저 트래픽을 수집하고,
 - 평가 기준
   - **미탐(False Negative) 최소화**
   - Recall 중심 평가
-
----
-
-## 📊 데이터 구성
-
-- 데이터 형식: JSON
-- 전체 트래픽 수: 4046건
-- 학습 데이터: 506건 (조건 충족 데이터만 사용)
-- Feature 수: 14개
-
----
-
-## 🧹 데이터 전처리
-
-- 분석 기준 충족 데이터 선별
-- 불필요 로그 제거
-- 학습/평가 데이터 분리
-- Feature 정규화 (Scaling)
-- 클래스 불균형 대응
-  - 클래스 가중치 적용
 
 ---
 
