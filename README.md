@@ -32,6 +32,7 @@ Chrome DevTools를 활용하여 브라우저 트래픽을 수집하고,
 - Python
 - HTML
 - JS
+- CSS
 - Numpy
 - Tensorflow
 - Scikit-learn
