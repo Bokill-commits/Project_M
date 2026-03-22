@@ -6,7 +6,7 @@
 
 학습모델 테스트 영상<br>
 <br>
-[![Youtube](https://img.shields.io/badge/Youtube-Project__H-red?logo=youtube&logoColor=white)](https://youtu.be/Ly1jYo7CWos)
+[![Youtube](https://img.shields.io/badge/Youtube-Project__M-red?logo=youtube&logoColor=white)](https://youtu.be/Ly1jYo7CWos)
 
 ---
 
